@@ -23,6 +23,7 @@ document.onkeyup = function(event) {
 
             guessesSoFar.push(" " + userGuess); 
 
+            //Adds to wins and resets game if user guesses correctly
             if (userGuess == computerGuess) {
                 wins++;
                 guessesLeft = 9; 
@@ -32,6 +33,7 @@ document.onkeyup = function(event) {
                 alert("You won! " + userGuess + " was the correct answer");
             }
 
+            //adds to losses and resets game if user exhausts all 9 guesses
             else if (guessesLeft == 0) {
                 losses++;
                 guessesLeft = 9;
@@ -40,6 +42,7 @@ document.onkeyup = function(event) {
                 console.log("You lost. Computer now chose the letter " + computerGuess); 
             }
 
+            //If a user guesses incorrectly, subtract from remaining guesses
             else if (userGuess != computerGuess) {
                 guessesLeft--; 
             }  
