@@ -29,6 +29,7 @@ document.onkeyup = function(event) {
                 guessesSoFar.length = 0; 
                 computerGuess = computerChoices[Math.floor(Math.random()*computerChoices.length)];
                 console.log("You won! Computer now chose the letter " + computerGuess); 
+                alert("You won! " + userGuess + " was the correct answer");
             }
 
             else if (guessesLeft == 0) {

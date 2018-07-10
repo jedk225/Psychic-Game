@@ -1,15 +1,19 @@
 .container {
     padding: 50px;
     max-width: 60%;
-    background-color: aqua;
+    background-color: rgba(0, 87, 119, 0.95);
     margin-top: 50px;
+    border: 1px solid rgb(0, 47, 65);
 }
 
 #game {
     text-align: center;
+    color: white;
 }
 
 body {
     background-image: url(../images/trippy.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
 
 }
